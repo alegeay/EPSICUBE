@@ -1,0 +1,192 @@
+# All permissions can be self defined in the config. If a permission is set to '' everybody has that permission
+
+MySQL:
+    Host: minecraft-db
+    Port: 3306
+    UseSSL: false
+    Username: minecraft
+    Password: Epsi2021!
+    Database: friends
+    TablePrefix: fr_
+    Cache: true
+    Pool: {ConnectionPool: C3P0, InitialPoolSize: 3, MinPoolSize: 3, MaxPoolSize: 15,
+        IdleConnectionTestPeriod: 290, TestConnectionOnCheckin: false}
+General:
+    UseOwnLanguageFile: false
+    CheckForUpdates: true
+    Language: English
+    MultiCoreEnhancement: true
+    Time: {LanguageTag: FR, TimeZone: Europe/Paris, Format: 'dd/MM/yyyy HH:mm:ss'}
+    DisableAutomaticPartyServerSwitching: false
+    PartyDoNotJoinTheseServers: [lobby, lobby1, lobby2]
+    PartyJoinDelayInSeconds: 0
+    DisabledServers: [login1, login2]
+    SendFriendRequestNotificationOnJoin: true
+    ForceUUIDSupportOnOfflineServers: false
+    Deactivated: {OfflineMessages: false}
+    TabComplete: {General: true, Player: true}
+ServerDisplayNames: {Use: false}
+Party:
+    MaxPlayersPerParty:
+        Default: 0
+        NoLimitPermission: ''
+        AddSlotsPermissions:
+            Premium: {Permission: de.simonsator.partyandfriends.party.addslots.premium,
+                SlotsToAdd: 5}
+            SuperPremium: {Permission: de.simonsator.partyandfriends.party.addslots.premium,
+                SlotsToAdd: 10}
+Extensions: {UseExtensionFolderAsConfigFolder: false}
+Commands:
+    Friends:
+        General: {PrintOutHelpOnError: true}
+        TopCommands:
+            Friend:
+                Names: [friend, friends]
+                Permissions: ''
+                Disabled: false
+            Reply:
+                Names: [reply, r]
+                Disabled: false
+                Permission: ''
+            MSG:
+                Names: [msg, fmsg]
+                Disabled: false
+                Permission: ''
+                MSGNonFriendsPermission: de.simonsator.partyandfriends.msg.msgnonfriends
+                AllowPlayersToUseChatFormatting: true
+        SubCommands:
+            Accept:
+                Names: [accept, approve]
+                Permission: ''
+                Priority: 3
+                SendTextIsNowOnline: true
+            Add:
+                Names: [add, addfriend]
+                Permission: ''
+                Priority: 2
+                FriendRequestTimeout: 0
+            Deny:
+                Names: [deny, reject]
+                Permission: ''
+                Priority: 4
+            Jump:
+                Names: [jump, jumpto]
+                Disabled: false
+                Permission: ''
+                Priority: 6
+                DisabledServers: [login1, adminlobby1]
+            List:
+                Names: [list, info]
+                Disabled: false
+                Permission: ''
+                Priority: 0
+                SortElements: true
+                EntriesPerPage: 10
+            MSG:
+                Names: [msg, message]
+                Disabled: false
+                Permission: ''
+                Priority: 1
+                ReplyCommand: /friend msg [PLAYER]
+            Remove:
+                Names: [remove, deleteAccount]
+                Permission: ''
+                Priority: 5
+                UseFriendRemovedYouMessage: false
+            Settings:
+                Names: [setting, settings]
+                Disabled: false
+                Permission: ''
+                Priority: 7
+                Settings:
+                    FriendRequest:
+                        Names: [friendrequest, receivefriendrequests, friendrequests]
+                        Enabled: true
+                        Permission: ''
+                        Priority: 0
+                    Jump:
+                        Names: [jump, allowjump]
+                        Enabled: true
+                        Permission: ''
+                        Priority: 1
+                    Offline:
+                        Names: [offline, alwaysoffline]
+                        Enabled: true
+                        Permission: ''
+                        Priority: 2
+                    NotifyOnlineStatusChange:
+                        Names: [notifyonline, notify]
+                        Enabled: true
+                        Permission: ''
+                        Priority: 3
+                    PM:
+                        Names: [pm, message, messages]
+                        Enabled: true
+                        Permission: ''
+                        Priority: 4
+                    PartyInvite:
+                        Names: [invite, party]
+                        Enabled: true
+                        Permission: ''
+                        Priority: 5
+    Party:
+        General: {PrintOutHelpOnError: true, PrintOnlyExecutableSubCommandsOut: true}
+        TopCommands:
+            Party:
+                Names: [party, parties]
+                Permissions: ''
+                Disabled: false
+            PartyChat:
+                Names: [partychat, p]
+                Permissions: ''
+                Disabled: false
+        SubCommands:
+            Join:
+                Names: [join, j]
+                Permissions: ''
+                Priority: 0
+                AutoJoinLeaderServer: true
+            Deny:
+                Names: [deny, decline]
+                Permissions: ''
+                Priority: 0
+                Disabled: true
+            Invite:
+                Names: [invite, add]
+                Permissions: ''
+                Priority: 1
+                InvitationTimeOutTimeInSeconds: 60
+            InviteSetting:
+                Names: [settings, setting, invitesetting]
+                Permissions: ''
+                Priority: 2
+                Disabled: true
+            Kick:
+                Names: [kick, forcedleave]
+                Disabled: false
+                Permissions: ''
+                Priority: 6
+            Info:
+                Names: [info, list]
+                Disabled: false
+                Permissions: ''
+                Priority: 3
+            Leave:
+                Names: [leave, le]
+                Permissions: ''
+                Priority: 5
+            Chat:
+                Names: [chat, message, msg]
+                ReplyCommand: chat
+                Disabled: false
+                Permissions: ''
+                Priority: 4
+            Leader:
+                Names: [leader, lead]
+                Disabled: false
+                Permissions: ''
+                Priority: 7
+    PAFAdmin:
+        Enabled: false
+        Names: [pafadmin, adminpaf]
+GUI: {ChangedHideModeMessage: true, OpenFriendRequestMenuWithoutHavingRequests: true}

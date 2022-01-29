@@ -1,0 +1,9 @@
+rejoin-denied: ENTITY_VILLAGER_NO
+rejoin-allowed: ENTITY_SLIME_JUMP
+spectate-denied: ENTITY_VILLAGER_NO
+spectate-allowed: ENTITY_SLIME_JUMP
+join-denied: ENTITY_VILLAGER_NO
+join-allowed: ENTITY_SLIME_JUMP
+spectator-gui-click: ENTITY_SLIME_JUMP
+arena-selector-open: ENTITY_CHICKEN_EGG
+stats-gui-open: ENTITY_CHICKEN_EGG

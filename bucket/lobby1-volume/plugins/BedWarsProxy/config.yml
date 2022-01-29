@@ -1,0 +1,50 @@
+port: 2019
+language: en
+server-ip: play.methaverse.fr
+storeLink: https://epsi.fr
+allow-parties: true
+database:
+  enable: true
+  host: minecraft-db
+  database: bedwars1058
+  user: minecraft
+  pass: Epsi2021!
+  port: 3306
+  ssl: false
+levels-settings:
+  default-name: '&7[{number}✩] '
+  progress-bar-symbol: ■
+  progress-bar-unlocked-color: '&b'
+  progress-bar-locked-color: '&7'
+  progress-bar-format: '&8 [{progress}&8]'
+enable-party-cmd: true
+disabled-languages:
+- your language iso here
+arena-gui:
+  settings:
+    inv-size: 45
+    show-playing: true
+    use-slots: 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34
+  waiting:
+    material: DIAMOND_BLOCK
+    data: 0
+    enchanted: false
+  starting:
+    material: GOLD_BLOCK
+    data: 0
+    enchanted: true
+  playing:
+    material: REDSTONE_BLOCK
+    data: 0
+    enchanted: false
+  skipped-slot:
+    material: BLACK_STAINED_GLASS_PANE
+    data: 7
+    enchanted: false
+bungee-settings:
+  games-before-restart: 30
+  restart-cmd: restart
+  auto-scale-clone-limit: 5
+  lobby-sockets:
+  - play.methaverse.fr:25565
+  server-id: lobby

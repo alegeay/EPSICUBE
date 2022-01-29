@@ -1,0 +1,200 @@
+# Number of rows of slots of your server selector menu. For example '2' will mean 2*9 = 18 slots. Max value is 6.
+rows: 2
+
+# This will be displayed as the title of the menu.
+title: '&4EPSI Network'
+
+# This will be the name of the server selector item
+item-name: '&3EPSI Network'
+
+item-lore:
+- '&3Rejoins un autre serveur de notre network !'
+
+# The name of the server selector item.
+item: COMPASS
+
+# Give the item when a player joins?
+on-join: true
+
+# What slot should the item be in? Specify -1 to automatically put it in the first available slot.
+inv-slot: 0
+
+# URL clickable message
+url-message: '&3&lClick here'
+
+# Command to open the menu. Specify "none" for no command. (without /)
+command: "menu"
+
+menu:
+
+  # Server item
+  2:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-0.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby0'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 0'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+
+
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 0'
+      lore:
+       - C'est la sauce
+
+  3:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-1.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby1'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 1'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+ 
+
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 1'
+      lore:
+       - C'est la sauce
+
+  4:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-2.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby2'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 2'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+ 
+
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 2'
+      lore:
+       - C'est la sauce
+
+  5:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-3.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby3'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 3'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+ 
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 3'
+      lore:
+       - C'est la sauce
+  6:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-4.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby4'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 4'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+ 
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 4'
+      lore:
+       - C'est la sauce
+
+  12:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-5.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby5'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 5'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+ 
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 5'
+      lore:
+       - C'est la sauce
+
+  14:
+  
+    # Enable to show server status and placeholders
+    ping-server: true
+    ip: lobby-6.lobby
+    port: 25565
+    
+    # Action to run when the item is clicked
+    action: 'srv:lobby6'
+
+    online:
+      item: GREEN_WOOL
+      name: '&aEPSI LOBBY 6'
+      lore:
+       - 'Il y a {online} sur {max} joueur connecté.'
+ 
+    offline:
+      item: RED_WOOL
+      name: '&cEPSI LOBBY 6'
+      lore:
+       - C'est la sauce
+
+  # Message item
+  13:
+    action: 'msg:Hello'
+    offline:
+      item: 'head:auto'
+      name: 'Bonjour !'
+      lore:
+       - Cet item ne sert à rien 
+  
+  # No action item
+  -1: # -1 means everything else
+    action: 'none'
+    offline:
+      item: LIGHT_GRAY_STAINED_GLASS_PANE

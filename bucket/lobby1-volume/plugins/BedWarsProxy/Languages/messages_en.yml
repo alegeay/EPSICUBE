@@ -1,0 +1,133 @@
+prefix: ''
+name: English
+format-stats-time: yyyy/MM/dd HH:mm
+arena-status-offline: '&8Offline'
+arena-status-playing: '&cPlaying'
+arena-status-restarting: '&4Restarting'
+arena-status-waiting: '&2Waiting'
+arena-status-starting: '&6Starting'
+arena-selector-gui-name: '&8Click to join'
+arena-selector-content-name: '&a&l{name}'
+arena-selector-content-lore:
+- ''
+- '&7Status: {status}'
+- '&7Players: &f{on}&7/&f{max}'
+- '&7Type: &a{group}'
+- ''
+- '&aLeft-Click to join.'
+- '&eRight-Click to spectate.'
+arena-join-denied-selector: '{prefix}&cSorry but you can''t join this arena at this
+  moment. Use Right-Click to spectate!'
+arena-spectate-denied-selector: '{prefix}&cSorry but you can''t spectate this arena
+  at this moment. Use Left-Click to join!'
+cmd-not-found: '{prefix}&cCommand not found or you don''t have permission!'
+cmd-arena-gui-display: '&8- &f/bw gui &o(group) &eopens the arena selector.'
+cmd-arena-gui-hover: |-
+  &fChoose an arena
+  &fand play.
+cmd-lang-display: '&8- &f/bw language &o<iso> &echange language.'
+cmd-lang-hover: '&fChange your language.'
+cmd-rejoin-display: '&8- &f/bw rejoin &ereconnect to a game.'
+cmd-rejoin-hover: '&fReconnect to the game from where you got disconnected.'
+cmd-tp-display: '&8- &f/bw tp <name> &eteleport to a player as spectator.'
+cmd-tp-hover: '&fSpectate on a player. Used for moderators to check hackers.'
+cmd-lang-list-header: '{prefix} &2Available languages:'
+cmd-lang-list-format: '&a▪  &7{iso} - &f{name}'
+cmd-lang-usage: '{prefix}&7Usage: /lang &f&o<iso>'
+cmd-lang-not-exist: '{prefix}&cThis language doesn''t exist!'
+cmd-lang-set: '{prefix}&aLanguage changed!'
+cmd-join-usage: '&a▪ &7Usage: /bw join &o<arena/group>'
+cmd-join-not-found: '{prefix}&cThere isn''t any arena or arena group called: {name}'
+cmd-join-arena-full: |-
+  {prefix}&cThis arena is full!
+  &aPlease consider donating for more features. &7&o(click)
+cmd-join-arenas-full: '{prefix}&cThere isn''t any arena available right now ;('
+cmd-join-party-big: '{prefix}&cYour party is too big for joining this arena as a team
+  :('
+cmd-join-not-leader: '{prefix}&cOnly the leader can choose the arena.'
+cmd-join-spectate-denied: '&cSpectators are not allowed in this arena!'
+cmd-rejoin-no-arena: '{prefix}&cThere is no arena to rejoin!'
+cmd-rejoin-denied: '{prefix}&cYou can''t rejoin the arena anymore. Game ended or bed
+  destroyed.'
+cmd-rejoin-allowed: '{prefix}&eJoining arena &a{arena}&e!'
+cmd-party-help:
+- '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&aParty Commands:'
+- '&e/party invite <player> &7- &bInvites the player to your party'
+- '&e/party leave &7- &bLeaves the current party'
+- '&e/party remove <player> &7- &bRemove the player from the party'
+- '&e/party accept <player> &7- &bAccept a party invite'
+- '&e/party disband &7- &bDisbands the party'
+cmd-party-invite-usage: '{prefix}&eUsage: &7/party invite <player>'
+cmd-party-offline: '{prefix}&7{player} &eis offline!'
+cmd-party-invite: '{prefix}&eInvite sent to &7{player}&6.'
+cmd-party-invite-received: '{prefix}&b{player} &ehas invited you to a party! &o&7(Click
+  to accept)'
+cmd-party-invite-self: '{prefix}&cYou cannot invite yourself!'
+cmd-party-no-invite: '{prefix}&cThere''s no party requests to accept'
+cmd-party-already-in: '{prefix}&eYou''re already in a party!'
+cmd-party-no-perm: '{prefix}&cOnly the party owner can do this!'
+cmd-party-accept-usage: '{prefix}&eUsage: &7/party accept <player>'
+cmd-party-join: '{prefix}&7{player} &ehas joined the party!'
+cmd-party-not-in: '{prefix}&cYou''re not in a party!'
+cmd-party-cant-leave: |-
+  {prefix}&cYou can't leave your own party!
+  &eTry using: &b/party disband
+cmd-party-leave: '{prefix}&7{player} &ehas leaved the party!'
+cmd-party-disband: '{prefix}&eParty disbanded!'
+cmd-party-remove-usage: '{prefix}&7Usage: &e/party remove <player>'
+cmd-party-remove: '{prefix}&7{player} &ewas removed from the party,'
+cmd-party-remove-not-in: '{prefix}&7{player} &eis not in your party!'
+cmd-tp-usage: '{prefix}&7Usage: &e/bw tp <name>'
+cmd-tp-fail: '{prefix}&7{player}&e was not found in bed-wars arenas.'
+cmd-tp-fai2: '{prefix}&7{player}&e was found on &7{server}&e but you can''t join at
+  this time.'
+sign-dynamic-content:
+  waiting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  starting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  searching:
+  - '&4▆▆▆▆▆▆'
+  - '&1&lBOOTING'
+  - ''
+  - '&4▆▆▆▆▆▆'
+  no-games:
+  - ''
+  - '&8&lWaiting for'
+  - '&7&lopen lobby'
+  - ''
+sign-static-content:
+  waiting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  starting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  playing:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '{status}'
+  searching:
+  - '&4▆▆▆▆▆▆'
+  - '&1&lBOOTING'
+  - ''
+  - '&4▆▆▆▆▆▆'
+  no-games:
+  - ''
+  - '&8&lWaiting for'
+  - '&7&lopen lobby'
+  - ''
+display-group-default: DEFAULT
+display-name-world: world

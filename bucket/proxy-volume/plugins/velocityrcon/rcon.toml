@@ -1,0 +1,3 @@
+rcon-port = "25575"
+rcon-password = ""
+rcon-colored = false
