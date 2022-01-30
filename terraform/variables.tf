@@ -4,15 +4,15 @@ variable "cloudflare_id" {
     "email" = ""
     "api_key" = ""
     "zone_id" = ""
-    "dns_name" = ""
+    "dns_name" = "play"
   }
 }
 
 variable "scaleway_id" {
   type = map
   default = {
-  "zone"            = ""
-  "region"          = ""
+  "zone"            = "fr-par-1"
+  "region"          = "fr-par"
   "access_key" = ""
   "secret_key" = ""
   "project_id" = ""
